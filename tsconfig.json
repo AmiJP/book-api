@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "lib": ["ESNext"],
+      "noPropertyAccessFromIndexSignature": false,
+      "isolatedModules": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "typeRoots": ["./src/types/global.d.ts", "./node_modules/@types"],
+    },
+    "include": ["./index.ts", "./src/*"],
+    "exclude": ["./db.json"],
+    "ts-node": {
+      "esm": true,
+      "files": true,
+      "transpileOnly": true,
+      "experimentalResolver": true,
+      "experimentalSpecifierResolution": "node",
+    }
+  }
